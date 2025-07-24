@@ -1,0 +1,5 @@
+/Users/emanuele/Documents/WebDevProjects/StoredProcedue_CSharp/obj/Debug/net8.0/StoredProcedue_CSharp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/emanuele/Documents/WebDevProjects/StoredProcedue_CSharp/obj/Debug/net8.0/StoredProcedue_CSharp.AssemblyInfoInputs.cache
+/Users/emanuele/Documents/WebDevProjects/StoredProcedue_CSharp/obj/Debug/net8.0/StoredProcedue_CSharp.AssemblyInfo.cs
+/Users/emanuele/Documents/WebDevProjects/StoredProcedue_CSharp/obj/Debug/net8.0/StoredProcedue_CSharp.csproj.CoreCompileInputs.cache
+/Users/emanuele/Documents/WebDevProjects/StoredProcedue_CSharp/obj/Debug/net8.0/StoredProcedue_CSharp.sourcelink.json

@@ -13,12 +13,9 @@
         "packagesPath": "/Users/emanuele/.nuget/packages/",
         "outputPath": "/Users/emanuele/Documents/WebDevProjects/StoredProcedue_CSharp/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "/Users/emanuele/Library/Application Support/Godot/mono/GodotNuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "/Users/emanuele/.nuget/NuGet/NuGet.Config",
-          "/Users/emanuele/.nuget/NuGet/config/Godot.Offline.Config"
+          "/Users/emanuele/Documents/WebDevProjects/StoredProcedue_CSharp/NuGet.Config",
+          "/Users/emanuele/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
