@@ -21,19 +21,3 @@ Simulare un'applicazione che:
 4. Gestisce tutto da un'applicazione **.NET Console** con codice asincrono e separazione in `Models` e `Services`
 
 ---
-
-## 📁 Struttura del progetto
-
-ConsoleMySQLApp/
-│
-├── Program.cs                    # Entry point con interazione utente
-├── ConsoleMySQLApp.csproj        # File di progetto .NET
-├── NuGet.config                  # Configurazione NuGet pulita
-├── README.md                     # Questo file
-├── StoredProcedure.sql           # Script SQL con tabella + SP
-│
-├── Models/
-│   └── Utente.cs                 # POCO per rappresentare la tabella SQL
-│
-└── Services/
-└── DatabaseService.cs        # Logica di accesso al database e chiamata SP
