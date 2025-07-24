@@ -1,16 +1,18 @@
 using MySql.Data.MySqlClient;
-using System.Threading.Tasks;
+using Models;
+
+namespace Services;
 
 public class DatabaseService
 {
-    private readonly string _connStr = "Server=localhost;Database=test;User=root;Password=claptrap;";
+    private readonly string _connStr = "Server=localhost;Database=testdb;User=root;Password=;";
 
     public async Task<Utente?> GetUtenteByIdAsync(int id)
     {
         using var conn = new MySqlConnection(_connStr);
         using var cmd = new MySqlCommand("GetUtenteById", conn);
         cmd.CommandType = System.Data.CommandType.StoredProcedure;
-        cmd.Parameters.AddWithValue("@idUtente", id); // cambia nome parametro per MySQL
+        cmd.Parameters.AddWithValue("@idUtente", id);
 
         try
         {
@@ -26,12 +28,11 @@ public class DatabaseService
                     Email = reader.GetString("Email")
                 };
             }
-
             return null;
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"Errore: {ex.Message}");
+            Console.WriteLine($"Errore durante accesso ai dati: {ex.Message}");
             return null;
         }
     }
