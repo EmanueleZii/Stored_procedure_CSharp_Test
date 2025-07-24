@@ -1,11 +1,13 @@
 using MySql.Data.MySqlClient;
 using Models;
+using System;
+using System.Data;
 
 namespace Services;
 
 public class DatabaseService
 {
-    private readonly string _connStr = "Server=localhost;Database=testdb;User=root;Password=;";
+    private readonly string _connStr = "Server=localhost;Database=test;User=root;Password=claptrap;";
 
     public async Task<Utente?> GetUtenteByIdAsync(int id)
     {
@@ -23,9 +25,9 @@ public class DatabaseService
             {
                 return new Utente
                 {
-                    Id = reader.GetInt32("Id"),
-                    Nome = reader.GetString("Nome"),
-                    Email = reader.GetString("Email")
+                    Id = reader.GetOrdinal("Id"),
+                    Nome = reader.GetString(reader.GetOrdinal("Nome")),
+                    Email = reader.GetString(reader.GetOrdinal("Email"))
                 };
             }
             return null;
@@ -34,6 +36,17 @@ public class DatabaseService
         {
             Console.WriteLine($"Errore durante accesso ai dati: {ex.Message}");
             return null;
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandTimeout = 5;
         }
     }
+
+    public void CloseConnection(MySqlConnection conn)
+    {
+        if (conn != null && conn.State == System.Data.ConnectionState.Open)
+        {
+            conn.Close();
+        }
+    }
+
 }

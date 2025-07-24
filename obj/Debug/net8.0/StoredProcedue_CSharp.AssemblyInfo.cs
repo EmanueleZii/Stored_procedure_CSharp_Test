@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StoredProcedue_CSharp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8b1dfba0149a884e7b2042509efaae9db0941deb")]
 [assembly: System.Reflection.AssemblyProductAttribute("StoredProcedue_CSharp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StoredProcedue_CSharp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
